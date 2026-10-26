@@ -1,0 +1,42 @@
+### API Call for Patient Registration
+
+###
+
+POST http://127.0.0.1:8000/patient/
+content-type: application/json
+
+{
+"patient_name": "Anu",
+"age": 25,
+"gender": "Female",
+"phone": "9876543210",
+"disease": "Fever"
+}
+
+### API Call for Doctor Details
+
+###
+
+POST http://127.0.0.1:8000/doctor/
+content-type: application/json
+
+{
+"doctor_name": "Dr. Rahul",
+"department": "Cardiology",
+"experience": 8,
+"consultation_fee": 500
+}
+
+### API Call for Appointment Booking
+
+###
+
+POST http://127.0.0.1:8000/appointment/
+content-type: application/json
+
+{
+"patient_name": "Anu",
+"doctor_name": "Dr. Rahul",
+"appointment_date": "2026-10-27",
+"appointment_time": "10:30 AM"
+}
